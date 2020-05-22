@@ -143,7 +143,7 @@ func TestSRP(t *testing.T) {
 	var goodpass []byte = []byte("secretpassword")
 	var badpass []byte = []byte("badpassword")
 
-	bits := []int{1024, 2048, 3072, 4096, 6144, 8192}
+	bits := []int{256, 1024, 2048, 3072, 4096, 6144, 8192}
 
 	for _, p := range bits {
 		t.Logf("Prime bits %d ..\n", p)
